@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/c89fbdab-8065-4b0d-b99e-6063d46651ba/gratisography-augmented-reality-800x525.bmp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250923%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250923T124012Z&X-Amz-Expires=86400&X-Amz-Signature=00d698a25ae2419bf1e29b5d048442ead5f8225b7fdd591e240e110847f27151&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22gratisography-augmented-reality-800x525.bmp%22&response-content-type=image%2Fbmp&x-id=GetObject

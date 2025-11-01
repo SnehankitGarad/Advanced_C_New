@@ -1,8 +1,9 @@
 #include <stdio.h>
-void reverse_str(char ch[],int* count)
+void reverse_str(char ch[],int count)
 
 {
     int i=0;
+    //int count = 0;
     
     while(ch[i] != '\0')
     {
