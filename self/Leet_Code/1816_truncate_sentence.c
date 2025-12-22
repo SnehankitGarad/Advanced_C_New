@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 char* truncateSentence(char* s, int k) 
 {
-    
     int i=0;
     int words =0;
     while(s[i] != '\0')
@@ -17,15 +17,17 @@ char* truncateSentence(char* s, int k)
         }
         i++;
     }
+
     char* result = (char*)malloc((i+1)*sizeof(char));
-    for(int j = 0;j<i;j++)
+    for(int j = 0; j < i; j++)
     {
         result[j] = s[j];
     }
 
-    result[i]='\0';
+    result[i] = '\0';
     return result;
 }
+
 int main()
 {
     int k;
@@ -36,8 +38,12 @@ int main()
     printf("Enter the String: ");
     scanf(" %[^\n]",s);
 
-    char* brr = truncateSentence(s,  k);
-    printf("K string is: ");
-    printf(" %s",brr);
-    printf("\n");
+    char* brr = truncateSentence(s, k);
+    printf("K string is: %s\n", brr);
+
+    // ---------- FREE ADDED HERE ----------
+    free(brr);
+    // -------------------------------------
+
+    return 0;
 }

@@ -26,9 +26,16 @@ int* leftRightDifference(int* nums, int numsSize, int* returnSize)
         nums[i] =  abs(leftsum[i] - rightsum[i]);
     }
 
+    // ---------- FREE ADDED HERE ----------
+    free(leftsum);
+    free(rightsum);
+    free(result);
+    // -------------------------------------
+
     *returnSize = numsSize;
     return nums;
 }
+
 int main()
 {
     int size;

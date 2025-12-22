@@ -42,4 +42,13 @@ int main()
     char* brr = firstPalindrome(words, size);
     printf("Output : %s ",brr);
     printf("\n");
+
+       for(int i=0;i<size;i++)
+    {
+        free(words[i]);
+    }
+
+    free(words);
+   
+    return 0;
 }

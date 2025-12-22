@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 char** sortPeople(char** names, int namesSize, int* heights, int heightsSize, int* returnSize) 
 {
     for(int i=0;i<heightsSize-1;i++)
-      {
+    {
         for(int j=i+1;j<namesSize;j++)
         {
             if(heights[i] < heights[j])
@@ -15,15 +16,13 @@ char** sortPeople(char** names, int namesSize, int* heights, int heightsSize, in
                 char* name = names[i];
                 names[i] = names[j];
                 names[j] = name;
-
-
             }
         }
-      }
-      *returnSize = heightsSize;
-      return names;
-
+    }
+    *returnSize = heightsSize;
+    return names;
 }
+
 int main()
 {
     int heightsize;
@@ -58,4 +57,14 @@ int main()
     {
         printf("%s ",brr[i]);
     }
+
+    // ------------------- FREE ADDED HERE -------------------
+    for(int i = 0; i < namessize; i++)
+    {
+        free(names[i]);   // free each allocated name
+    }
+    free(names);          // free array of pointers
+    // --------------------------------------------------------
+
+    return 0;
 }

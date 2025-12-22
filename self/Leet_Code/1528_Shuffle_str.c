@@ -32,4 +32,5 @@ int main()
     char* brr =restoreString(s, indices, size);
     
     printf("%s\n",brr);
+    free(brr);
 }

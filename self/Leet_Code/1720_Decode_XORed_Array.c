@@ -32,4 +32,5 @@ int main()
     {
         printf("%d ",brr[i]);
     }
+    free(brr);
 }

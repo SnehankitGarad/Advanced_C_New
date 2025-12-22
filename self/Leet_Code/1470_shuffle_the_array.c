@@ -33,4 +33,5 @@ int main()
     {
     printf("%d ",krr[i]);
     }
+    free(krr);
 }
