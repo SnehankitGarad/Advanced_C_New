@@ -32,6 +32,6 @@ int main()
     }
     else
     {
-        printf("Not a power of 4\n");
+        printf("Not a power \n");
     }
 }
